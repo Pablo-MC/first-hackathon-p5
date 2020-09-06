@@ -39,3 +39,20 @@
    border-bottom: 1px solid #8b8d90;
 }
 
+
+/* Footer */
+
+footer {
+   background-color: #2C3E50; 
+}
+ 
+footer .row {
+   padding: 100px 0;
+}
+
+.social_links i {
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
