@@ -25,3 +25,17 @@
 .about {
    padding: 100px 0;
 }
+
+
+/* Contact Section */
+
+.contact {
+   background-color: #E67E22;
+   padding: 100px 0;
+}
+
+.contact h2 {
+   padding-bottom: 50px;
+   border-bottom: 1px solid #8b8d90;
+}
+
