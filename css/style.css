@@ -56,3 +56,12 @@ footer .row {
    cursor: pointer;
 }
 
+
+/* Solution to the navabr flash problem */  
+@media (min-width: 991.98px) { 
+
+   .navbar-not-flash {
+      min-height: 12px; 
+      margin: auto;
+   }
+}

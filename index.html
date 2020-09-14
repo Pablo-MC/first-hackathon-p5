@@ -1,129 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!-- FONT-AWESOME -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-      <!-- BOOTSTRAP CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-      <!-- CUSTOM CSS -->
-      <link rel="stylesheet" href="./css/style.css">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <title>First Hackathon P5</title>
-   </head>
-   <body>
-      <header>
-         <nav class="navbar navbar-expand-lg navbar-dark text-uppercase bg-dark">
-            <a class="navbar-brand text-light" href="#">John Doe</a>
-            <button class="navbar-toggler border-secondary" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-               aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-               <div class="navbar-nav">
-                  <a class="nav-link text-light" href="#">Portfolio</a>
-                  <a class="nav-link text-light" href="#">Acerca de mi</a>
-                  <a class="nav-link text-light" href="#">Contacto</a>
-               </div>
-            </div>
-         </nav>
-         <div class="jumbotron jumbotron-fluid bg-white">
-            <div class="container text-center">
-               <img class="img-fluid rounded-circle" src="img/avatar.png" alt="avatar">
-               <h1 class="display-4 text-uppercase">John Doe</h1>
-               <p class="lead">Desarrollador Web</p>
+   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+   <!-- FONT-AWESOME -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   <!-- BOOTSTRAP CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <!-- CUSTOM CSS -->
+   <link rel="stylesheet" href="./css/style.css">
+
+   <title>First Hackathon P5</title>
+</head>
+
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark text-uppercase bg-dark">
+         <a class="navbar-brand text-light" href="#">John Doe</a>
+         <button class="navbar-toggler border-secondary" type="button" data-toggle="collapse"
+            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse navbar-not-flash" id="navbarNavAltMarkup">
+            <div class="navbar-nav" data-toggle="collapse" data-target=".navbar-collapse">
+               <a class="nav-link text-light" href="#portfolio">Portfolio</a>
+               <a class="nav-link text-light" href="#about">Acerca de mi</a>
+               <a class="nav-link text-light" href="#contact">Contacto</a>
             </div>
          </div>
-      </header>
-
-      <!--  -->
-
-      <section class="portfolio">
-         <div class="container">
-            <h2 class="text-uppercase text-center">Portfolio</h2>
-            <div class="row">
-               <div class="col-12 col-sm-4">
-                  <img class="img-fluid" src="img/project_1.jpg" alt="startup_computer">
-               </div>
-               <div class="col-12 col-sm-4">
-                  <img class="img-fluid" src="img/project_2.jpg" alt="chess">
-               </div>
-               <div class="col-12 col-sm-4">
-                  <img class="img-fluid" src="img/project_3.jpg" alt="home_decoration">
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <!--  -->
-
-      <section class="about">
+      </nav>
+      <div class="jumbotron jumbotron-fluid bg-white">
          <div class="container text-center">
-            <h2 class="text-uppercase pb-3">Acerca de mi</h2>
-            <hr class="pt-3">
-            <p class="lead mx-auto w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aspernatur autem nobis impedit sapiente vel, unde repellat possimus libero, dolorum eum repellendus architecto molestias harum iste consequuntur sequi a voluptatum.</p>
+            <img class="img-fluid rounded-circle mt-5" src="img/avatar.png" alt="avatar">
+            <h1 class="display-4 text-uppercase">John Doe</h1>
+            <p class="lead">Desarrollador Web</p>
+         </div>
+      </div>
+   </header>
+
+   <!--  -->
+
+   <section class="portfolio" id="portfolio">
+      <div class="container">
+         <h2 class="text-uppercase text-center">Portfolio</h2>
+         <div class="row">
+            <div class="col-12 col-sm-4">
+               <img class="img-fluid" src="img/project_1.jpg" alt="startup_computer">
+            </div>
+            <div class="col-12 col-sm-4">
+               <img class="img-fluid" src="img/project_2.jpg" alt="chess">
+            </div>
+            <div class="col-12 col-sm-4">
+               <img class="img-fluid" src="img/project_3.jpg" alt="home_decoration">
             </div>
          </div>
-      </section>
+      </div>
+   </section>
 
-      <!--  -->
+   <!--  -->
 
-      <section class="contact">
-         <div class="container">
-            <h2 class="text-uppercase text-center">Contactame</h2>
-            <form class="mt-5">
-               <div class="form-group">
-                  <label for="name">Nombre</label>
-                  <input type="text" class="form-control" id="name">
-               </div>
-               <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-               </div>
-               <div class="form-group">
-                  <label for="phone">Número de teléfono</label>
-                  <input type="number" class="form-control" id="phone">
-               </div>
-               <div class="form-group">
-                  <label for="message">Mensaje</label>
-                  <textarea class="form-control" id="message" rows="3"></textarea>
-               </div>
-               <a class="btn btn-light" type="submit" href="mailto:cruzpablomartin@gmail.com">Enviar</a>
-            </form>
-         </div>
-      </section>
+   <section class="about" id="about">
+      <div class="container text-center">
+         <h2 class="text-uppercase pb-3">Acerca de mi</h2>
+         <hr class="pt-3">
+         <p class="lead mx-auto w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aspernatur
+            autem nobis impedit sapiente vel, unde repellat possimus libero, dolorum eum repellendus architecto
+            molestias harum iste consequuntur sequi a voluptatum.</p>
+      </div>
+   </section>
 
-      <!--  -->
+   <!--  -->
 
-      <footer>
-         <div class="container text-center text-light">
-            <div class="row">
-               <div class="col-12 col-sm-6">
-                  <h3 class="text-uppercase">Dirección</h3>
-                  <p class="font-weight-light h4 pb-2">Av. de Mayo 225 <br> C1084AAA CABA</p>        
-               </div>
-               <div class="col-12 col-sm-6">
-                  <h3 class="text-uppercase">En las redes</h3>
-                  <div class="social_links">
-                     <i class="fa fa-border fa-facebook"></i>
-                     <i class="fa fa-border fa-twitter"></i>
-                     <i class="fa fa-border fa-linkedin"></i>
-                     <i class="fa fa-border fa-dribbble"></i>
-                  </div>
+   <section class="contact" id="contact">
+      <div class="container">
+         <h2 class="text-uppercase text-center">Contactame</h2>
+         <form class="mt-5">
+            <div class="form-group">
+               <label for="name">Nombre</label>
+               <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+               <label for="email">Email</label>
+               <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+               <label for="phone">Número de teléfono</label>
+               <input type="number" class="form-control" id="phone">
+            </div>
+            <div class="form-group">
+               <label for="message">Mensaje</label>
+               <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <a class="btn btn-light" type="submit" href="mailto:cruzpablomartin@gmail.com">Enviar</a>
+         </form>
+      </div>
+   </section>
+
+   <!--  -->
+
+   <footer>
+      <div class="container text-center text-light">
+         <div class="row">
+            <div class="col-12 col-sm-6">
+               <h3 class="text-uppercase">Dirección</h3>
+               <p class="font-weight-light h4 pb-2">Av. de Mayo 225 <br> C1084AAA CABA</p>
+            </div>
+            <div class="col-12 col-sm-6">
+               <h3 class="text-uppercase">En las redes</h3>
+               <div class="social_links">
+                  <i class="fa fa-border fa-facebook"></i>
+                  <i class="fa fa-border fa-twitter"></i>
+                  <i class="fa fa-border fa-linkedin"></i>
+                  <i class="fa fa-border fa-dribbble"></i>
                </div>
             </div>
          </div>
-         <div class="bg-dark">
-            <p class="text-center text-light p-3 m-0">Copyright &copy; Tu sitio web 2020</p>
-         </div>
-      </footer>      
+      </div>
+      <div class="bg-dark">
+         <p class="text-center text-light p-3 m-0">Copyright &copy; Tu sitio web 2020</p>
+      </div>
+   </footer>
 
-      
-      <!-- BOOTSTRAP JS -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-   </body>
+
+   <!-- BOOTSTRAP JS -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
 </html>
